@@ -71,3 +71,36 @@ El comando *git merge* **nombre de la rama**: incorpora los cambios a la rama ma
 
 # Git remoto
 
+## ¿Que es GitHub?
+**GitHub** es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git
+
+## Para comenzar a usar GIT
+Es indispensable tener la aplicación git instalada en la computadora y una cuenta creada en github.com para poder comenzar a trabajar con esta herramienta, una vez ya creada iremos a la aplicación llamada git bush y allí colocaremos el primer comando que sirve para introducir el nombre de usuario en la aplicación y el email.
+
+Comando nombre de usuario: *git config --global user.name  “usuario”*  
+Comando E-mail: *git config --global user.email email@ejemplo.com*
+
+Al concluir estos pasos se deberá crear una carpeta que será la que va a contener todos los repositorios que nosotros coloquemos en este caso la carpeta llevará el nombre de “Repositorios” que estará en el escritorio.
+
+Comando para ubicarnos en el escritorio: *cd desktop*
+Comando para ubicarnos dentro de la carpeta: *cd Repositorios*
+
+Una vez que estemos dentro de la misma debemos usar el comando *git init* para crear un repositorio en la misma, con este comando se creará una carpeta .git con un repositorio completamente vacío.
+Ya en este paso podremos comenzar a colocar nuestros proyectos dentro de la carpeta
+
+Comando para añadir el proyecto a git: *git add nombreproyecto.formato*
+
+Al concluir esto deberemos corroborar el estado del proyecto agregado utilizando el comando *git status* en el cual nos indica en cual rama se encuentra el repositorio y el estado del proyecto
+Una vez finalizado esto se deberá hacer un commit, que se refiere al mensaje de confirmación para este proyecto con el comando:
+*git commit -m “commit para el proyecto”*
+
+Al estar con el commit colocado el trabajo ya estará disponible para subirlo a la página github con los siguientes comandos:
+
+*git remote add* ***nombreproyecto** **link obtenido de las instrucción de github***
+*git push -u **nombreproyecto** master*
+
+Al hacer esto nos pedirá nombre de usuario y contraseña para poder habilitar al git a subir ese archivo al repositorio de github
+Por otra parte git también ofrece la posibilidad de clonar un repositorio existente por ejemplo para tener un respaldo si deseas editar un proyecto o si deseas contribuir en el mismo, además de que también se utiliza para clonar librerías o proyectos desde la página web github
+
+Comando git local: *git clone*
+Comando git remoto: *git clone [URL]*
